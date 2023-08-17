@@ -1,0 +1,13 @@
+-  name : Variable
+   hosts: WEB
+   vars:
+     URL: play.google.com
+   tasks:
+      - name : To get that link using Variable Concept
+        ansible.builtin.debug:
+          msg: URL = {{ URL }}
+      - name: To get that link using Variable Concept
+        ansible.builtin.debug:
+          msg: URL = {{ URL }}
+        vars:
+           URL: tasks.google.com
