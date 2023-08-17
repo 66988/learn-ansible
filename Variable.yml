@@ -3,5 +3,5 @@
   connection: local
   vars:
      URL: play.google.com
-  tasks:
+  roles:
       - sample
