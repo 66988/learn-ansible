@@ -1,9 +1,8 @@
--  name : Variable
-   hosts: localhost
-   connection: local
-   vars:
+- name : Variable
+  hosts: all
+  vars:
      URL: play.google.com
-   tasks:
+  tasks:
       - name : To get that link using Variable Concept
         ansible.builtin.debug:
           msg: URL = {{ URL }}
