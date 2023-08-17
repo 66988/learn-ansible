@@ -1,5 +1,6 @@
 - name : Variable
-  hosts: all
+  hosts: localhost
+  connection: local
   vars:
      URL: play.google.com
   tasks:
