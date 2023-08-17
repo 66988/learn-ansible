@@ -1,0 +1,9 @@
+- name: Print Variable
+  ansible.builtin.debug:
+    msg: URL - {{ URL }}
+
+- name: Print Variable- Task Variable
+  ansible.builtin.debug:
+    msg: URL = {{ URL }}
+  vars:
+    URL: tasks.google.com
